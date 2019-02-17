@@ -60,5 +60,4 @@ export class ClienteService {
       grupo: 0
     };
   }
-  
 }

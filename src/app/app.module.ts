@@ -7,6 +7,7 @@ import { ClienteComponent } from './components/cliente/cliente.component';
 import { ClienteService } from './services/cliente.service';
 import { ListaClientesComponent } from './components/lista-clientes/lista-clientes.component';
 import { AltaClienteComponent } from './components/alta-cliente/alta-cliente.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,11 @@ import { AltaClienteComponent } from './components/alta-cliente/alta-cliente.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+  ],
+  exports: [
+    AltaClienteComponent
   ],
   providers: [
     ClienteService

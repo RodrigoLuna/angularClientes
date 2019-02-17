@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from 'src/app/interfaces/cliente';
+import { Subject, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cliente',
@@ -13,8 +14,8 @@ export class ClienteComponent implements OnInit {
   ngOnInit() {
   }
 
-  agregarCliente(cliente: Cliente){
-    
+  agregarCliente(cliente: Cliente) {
+
   }
 
 }

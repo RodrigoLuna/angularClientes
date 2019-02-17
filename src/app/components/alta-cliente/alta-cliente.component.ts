@@ -9,7 +9,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
 })
 export class AltaClienteComponent implements OnInit {
 
-  cliente:Cliente;
+  cliente: Cliente;
   grupos: Grupo[];
 
   constructor(private clienteService: ClienteService) { }
@@ -19,7 +19,7 @@ export class AltaClienteComponent implements OnInit {
     this.grupos = this.clienteService.getGrupos();
   }
 
-  nuevoCliente() : void{
+  nuevoCliente(): void {
     this.clienteService.agregarCliente(this.cliente);
     this.cliente = this.clienteService.nuevoCliente();
   }
